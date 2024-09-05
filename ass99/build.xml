@@ -1,0 +1,36 @@
+<project default="compile">
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac classpath="bin"
+               srcdir="src"
+               destdir="bin"
+               includeantruntime="false"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+
+
+
+    <target name="run1" depends="compile">
+        <java classname="Task1"
+              classpath="bin"
+              fork="true"/>
+    </target>
+
+    <target name="run2" depends="compile">
+        <java classname="Task2"
+              classpath="bin"
+              fork="true"/>
+    </target>
+
+    <target name="check">
+        <java jar="checkstyle-8.44-all.jar" fork="true">
+            <arg line="-c biuoop.xml" />
+            <arg line="src/*.java" />
+        </java>
+    </target>
+    
+</project>

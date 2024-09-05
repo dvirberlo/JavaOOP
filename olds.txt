@@ -1,0 +1,13 @@
+https://github.com/search?q=language%3Ajava%20biu%20oop&type=repositories
+
+https://github.com/TomBenDor/OOP
+https://github.com/OzAmoyal/Biuoop
+https://github.com/NadavElgrabli/OOP
+https://github.com/boro3040/oop_ex4
+
+
+- abstract: gameobject/sprite/collideable
+- abstract HitNotifier
+- instanceof : equals ???
+
+
